@@ -1,17 +1,44 @@
-import { Counter } from "./components/counter/counter";
-import { Logo } from "./components/logo/logo";
+import { Avatar } from './components/avatar/avatar';
+import { Button } from './components/button/button';
+import { Center } from './components/center/center';
+import { NeuralabLogo } from './components/logo/logo';
+import { Title } from './components/title/title';
 
 export default () => {
-  return (
-    <>
-      <head>
-        <meta charSet="utf-8" />
-        <title>Qwik Blank App</title>
-      </head>
-      <body>
-        <Logo />
-        <Counter />
-      </body>
-    </>
-  );
+	return (
+		<>
+			<head>
+				<meta charSet='utf-8' />
+				<title>Neuralab UI Library</title>
+			</head>
+			<body
+				style={{
+					backgroundColor: '#525252',
+				}}>
+				<Center>
+					<NeuralabLogo
+						width={50}
+						height={50}
+					/>
+				</Center>
+				<Center>
+					<Title animation='underline'>Neural lab UI Library</Title>
+				</Center>
+
+				<Center>
+					<Button
+						style={{
+							marginTop: '20px',
+						}}
+						btnVariant="primary-pulse"
+						btnText='view my source code'
+						onClick$={() =>
+							(window.location.href = 'https://github.com/NeuraLabCloud/ui')
+						}
+					/>
+				</Center>
+				<Avatar src='https://cdn.discordapp.com/avatars/270904126974590976/5131053ad6d3e35ef587c8fc3d471963.png' />
+			</body>
+		</>
+	);
 };

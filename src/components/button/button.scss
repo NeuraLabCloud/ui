@@ -1,0 +1,88 @@
+@import "../../scss/index.scss";
+
+$primary-color: $zinc-800;
+$secondary-color: $violet-600;
+
+.btn-primary {
+  padding: 10px 20px;
+  border: 2px solid $primary-color;
+  border-radius: 50px;
+  background-color: $primary-color;
+  color: $zinc-200;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $zinc-900;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $zinc-900;
+  }
+
+  &:active {
+    background-color: $zinc-950;
+  }
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  border: 2px solid $secondary-color;
+  border-radius: 50px;
+  background-color: $secondary-color;
+  color: $zinc-200;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $violet-700;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $violet-700;
+  }
+
+  &:active {
+    background-color: $violet-800;
+  }
+}
+
+.btn-primary-pulse {
+  padding: 10px 20px;
+  border: 2px solid $primary-color;
+  border-radius: 50px;
+  background-color: $primary-color;
+  color: $zinc-200;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $zinc-700;
+  }
+
+  &:active {
+    background-color: $zinc-800;
+  }
+}

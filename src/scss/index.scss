@@ -1,0 +1,14 @@
+/* 
+? Global Shard Styles
+*
+* These are used in many components to 
+* keep the styles consistent across the app
+* and easy to maintain over time.
+*/
+
+$inherit-color: inherit;
+$current-color: currentColor;
+$transparent-color: transparent;
+
+// Colors
+@import "colors";

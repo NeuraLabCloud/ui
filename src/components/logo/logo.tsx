@@ -1,16 +1,18 @@
 import { component$ } from "@builder.io/qwik";
+import { Avatar } from "../avatar/avatar";
 
-export const Logo = component$(() => {
+interface LogoProps {
+  width?: number;
+  height?: number;
+  alt?: string;
+}
+
+export const NeuralabLogo = component$<LogoProps>(({ width, height, alt }) => {
   return (
-    <div>
-      <a href="https://qwik.builder.io/">
-        <img
-          alt="Qwik Logo"
-          width={400}
-          height={147}
-          src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F667ab6c2283d4c4d878fb9083aacc10f"
-        />
-      </a>
-    </div>
-  );
+			<div>
+				<a href='https://neuralab.dev'>
+				<Avatar src='https://raw.githubusercontent.com/NeuraLabCloud/static-assets/main/branding/icons/processor/processor.svg' width={width} height={height} alt={alt}/>
+				</a>
+			</div>
+		);
 });
