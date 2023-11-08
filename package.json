@@ -1,7 +1,7 @@
 {
 	"name": "@neuralab.dev/ui",
 	"version": "0.0.1",
-	"description": "Create a reusable Qwik component library",
+	"description": "Neuralab component library",
 	"main": "./lib/index.qwik.mjs",
 	"qwik": "./lib/index.qwik.mjs",
 	"types": "./lib-types/index.d.ts",
