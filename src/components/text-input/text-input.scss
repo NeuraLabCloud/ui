@@ -1,0 +1,57 @@
+@import "../../scss/index.scss";
+
+.name-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid $zinc-800;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 20px;
+  min-height: 40px;
+
+  &:focus {
+    border-color: $zinc-500;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+
+  &::placeholder {
+    color: $zinc-500;
+  }
+
+  & + .input-label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $zinc-800;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:focus + .input-label,
+  &.has-value + .input-label {
+    top: 0;
+    font-size: 12px;
+    color: $zinc-500;
+  }
+
+  // Media queries for smaller screens
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+    min-height: 30px;
+
+    & + .input-label {
+      font-size: 12px;
+    }
+
+    &:focus + .input-label,
+    &.has-value + .input-label {
+      font-size: 10px;
+    }
+  }
+}
