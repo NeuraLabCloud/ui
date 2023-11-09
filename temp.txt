@@ -1,7 +1,9 @@
-import { component$ } from '@builder.io/qwik';
+import styles from "./temp.scss?inline";
+import { component$, useStyles$ } from '@builder.io/qwik';
 
 interface TempProps {}
 
-export const Temp = component$<TempProps>(({}) => {
-	return <></>
+export const Temp = component$<TempProps>(() => {
+    useStyles$(styles);
+	return <></>;
 });

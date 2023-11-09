@@ -2,6 +2,7 @@ import { Avatar } from './components/avatar/avatar';
 import { Button } from './components/button/button';
 import { Center } from './components/center/center';
 import { NeuralabLogo } from './components/logo/logo';
+import { TextInput } from './components/text-input/text-input';
 import { Title } from './components/title/title';
 
 export default () => {
@@ -13,7 +14,7 @@ export default () => {
 			</head>
 			<body
 				style={{
-					backgroundColor: '#525252',
+					backgroundColor: '#125453',
 				}}>
 				<Center>
 					<NeuralabLogo
@@ -38,6 +39,7 @@ export default () => {
 					/>
 				</Center>
 				<Avatar src='https://cdn.discordapp.com/avatars/270904126974590976/5131053ad6d3e35ef587c8fc3d471963.png' />
+				<TextInput placeholder='qwik.js > react.js ???'/>
 			</body>
 		</>
 	);

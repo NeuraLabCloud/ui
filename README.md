@@ -9,7 +9,7 @@ The Custom UI library used in [Neuralab](https://neuralab.dev/).
 - [x] Avatar
 - [x] Center
 - [x] Title
-- [ ] Input
+- [x] TextInput
 - [ ] Textarea
 - [ ] Select
 - [ ] Checkbox
