@@ -18,8 +18,8 @@ export default () => {
 				}}>
 				<Center>
 					<NeuralabLogo
-						width={50}
-						height={50}
+						w={50}
+						h={50}
 					/>
 				</Center>
 				<Center>
@@ -38,7 +38,7 @@ export default () => {
 						}
 					/>
 				</Center>
-				<Avatar src='https://cdn.discordapp.com/avatars/270904126974590976/5131053ad6d3e35ef587c8fc3d471963.png' />
+				<Avatar src='https://cdn.discordapp.com/avatars/270904126974590976/5131053ad6d3e35ef587c8fc3d471963.png' w={10} h={90} />
 				<TextInput placeholder='qwik.js > react.js ???'/>
 			</body>
 		</>

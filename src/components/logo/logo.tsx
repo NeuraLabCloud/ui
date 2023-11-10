@@ -1,17 +1,24 @@
 import { component$ } from "@builder.io/qwik";
-import { Avatar } from "../avatar/avatar";
 
 interface LogoProps {
-  width?: number;
-  height?: number;
+  w?: number;
+  h?: number;
   alt?: string;
 }
 
-export const NeuralabLogo = component$<LogoProps>(({ width, height, alt }) => {
+const url =
+	'https://raw.githubusercontent.com/NeuraLabCloud/static-assets/main/branding/icons/processor/processor.svg';
+
+export const NeuralabLogo = component$<LogoProps>(({ w, h, alt }) => {
   return (
 			<div>
 				<a href='https://neuralab.dev'>
-				<Avatar src='https://raw.githubusercontent.com/NeuraLabCloud/static-assets/main/branding/icons/processor/processor.svg' width={width} height={height} alt={alt}/>
+					<img
+						src={url}
+						alt={alt}
+						width={w}
+						height={h}
+					/>
 				</a>
 			</div>
 		);
