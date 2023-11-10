@@ -1,6 +1,6 @@
 interface LogoProps {
-    width?: number;
-    height?: number;
+    w?: number;
+    h?: number;
     alt?: string;
 }
 export declare const NeuralabLogo: import("@builder.io/qwik").Component<LogoProps>;
