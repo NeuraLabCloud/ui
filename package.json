@@ -1,5 +1,5 @@
 {
-	"name": "@neuralab.dev/ui",
+	"name": "@neuralab/ui",
 	"version": "0.0.1",
 	"description": "Neuralab component library",
 	"main": "./lib/index.qwik.mjs",
