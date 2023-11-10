@@ -38,8 +38,8 @@ export default () => {
 						}
 					/>
 				</Center>
-				<Avatar src='https://cdn.discordapp.com/avatars/270904126974590976/5131053ad6d3e35ef587c8fc3d471963.png' w={10} h={90} />
-				<TextInput placeholder='qwik.js > react.js ???'/>
+				<Avatar src='https://cdn.discordapp.com/avatars/270904126974590976/5131053ad6d3e35ef587c8fc3d471963.png' w={200} h={200} />
+				<TextInput placeholder='dankkkk boiiiiii'/>
 			</body>
 		</>
 	);
