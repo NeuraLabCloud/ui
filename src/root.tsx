@@ -18,8 +18,9 @@ export default () => {
 				}}>
 				<Center>
 					<NeuralabLogo
-						w={50}
-						h={50}
+						w={55}
+						h={55}
+						target="_blank"
 					/>
 				</Center>
 				<Center>
