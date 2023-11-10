@@ -15,3 +15,4 @@ The Custom UI library used in [Neuralab](https://neuralab.dev/).
 - [ ] Checkbox
 - [ ] Switch
 - [ ] Badge
+- [ ] Card
